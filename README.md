@@ -1,5 +1,9 @@
 # visualize-org-commits
-Wrapper around gource that visualizes commits from all of your org's public repositories on github
+Wrapper around gource that visualizes commits from all of your org's public repositories on GitHub
+
+[![Winding Tree commit visualization](https://media.giphy.com/media/Y4rTKc3J6MRACU4FVl/giphy.gif)](https://www.youtube.com/watch?v=cSblZNuaEAY)
+
+(Click through to see video on https://youtu.be/cSblZNuaEAY)
 
 # Dependencies
 
