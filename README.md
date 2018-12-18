@@ -10,8 +10,7 @@ Wrapper around gource that visualizes commits from all of your org's public repo
 The `do-video.sh` script dependes on:
 
 - bash
-- [curl](https://curl.haxx.se/)
-- [python](https://www.python.org/) (2 and 3 should both work)
+- nodeJS
 - [git](https://git-scm.com/)
 - [gource](https://github.com/acaudwell/Gource)
 - [ffmpeg](https://www.ffmpeg.org/)
@@ -21,14 +20,13 @@ I have no idea if this might work on Mac or Windows.
 
 # Usage
 
-1. Edit the ORGANIZATION variable in `do-video.sh` script. That's the GitHub organization handle.
+1. Edit the ORGANIZATION environment variable in `package.json` script. That's the GitHub organization handle.
 1. Edit the BGR variable in `do-video.sh` script. That's path to an image that will be used as video background.
-1. Optionally edit the BASE_PATH variable in `do-video.sh` script. That controls where the repositories are cloned.
 
 And run the script:
 
 ```
-$ ./do-video.sh
+$ npm install && npm run do-video
 ```
 
 The script clones all of the organization's public GitHub repositories to a `BASE_PATH` location

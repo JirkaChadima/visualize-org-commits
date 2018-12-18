@@ -1,2 +1,4 @@
+tmp/*
 *.log
 *.mp4
+node_modules

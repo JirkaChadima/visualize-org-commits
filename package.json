@@ -1,0 +1,25 @@
+{
+  "name": "wt-gource-video",
+  "version": "0.0.0",
+  "description": "Wrapper around gource that visualizes commits from all of your org's public repositories on github",
+  "main": "repository-list.js",
+  "scripts": {
+    "make-repo-list": "node tools/make-repository-list.js > tmp/repo-list.txt",
+    "do-video": "ORGANIZATION=windingtree npm run make-repo-list && ./do-video.sh",
+    "do-video-lite": "ORGANIZATION=windingtree ./do-video.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JirkaChadima/visualize-org-commits.git"
+  },
+  "author": "Jirka Chadima <chadima.jiri@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JirkaChadima/visualize-org-commits/issues"
+  },
+  "homepage": "https://github.com/JirkaChadima/visualize-org-commits#readme",
+  "dependencies": {
+    "node-fetch": "^2.3.0",
+    "parse-link-header": "^1.0.1"
+  }
+}
