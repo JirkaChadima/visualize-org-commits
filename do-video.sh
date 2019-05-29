@@ -28,7 +28,6 @@ gource "${LOGS}combined.log" \
   --auto-skip-seconds 2 \
   --seconds-per-day 1 \
   --file-idle-time 0 \
-  --key \
   --background-image "$BGR" \
   --highlight-users \
   --highlight-colour 0B8FDF \
