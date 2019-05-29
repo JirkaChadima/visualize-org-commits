@@ -23,8 +23,10 @@ async function main () {
     console.error(repoList.message);
     process.exit(1);
   }
-  repoList.map((r) => {
-    console.log(r.name);
-  });
+  repoList
+    .filter((r) => !r.fork)
+    .map((r) => {
+      console.log(r.name);
+    });
 }
 main();
