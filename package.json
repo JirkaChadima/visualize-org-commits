@@ -20,6 +20,6 @@
   "homepage": "https://github.com/JirkaChadima/visualize-org-commits#readme",
   "dependencies": {
     "node-fetch": "^2.6.1",
-    "parse-link-header": "^1.0.1"
+    "parse-link-header": "^2.0.0"
   }
 }
